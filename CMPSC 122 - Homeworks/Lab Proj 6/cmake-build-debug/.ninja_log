@@ -1,0 +1,19 @@
+# ninja log v5
+0	350	6986522732426587	CMakeFiles/LabProj6.dir/main.cpp.obj	f2b4ef1647ae1d9b
+8	352	6986522732436471	CMakeFiles/LabProj6.dir/mystring2.cpp.obj	da127e6d1094d816
+352	503	6986522733915480	LabProj6.exe	c8753138de5974c
+2	271	6986526223838149	CMakeFiles/LabProj6.dir/main.cpp.obj	f2b4ef1647ae1d9b
+272	395	6986526225025870	LabProj6.exe	c8753138de5974c
+2	440	6986529505246571	CMakeFiles/LabProj6.dir/main.cpp.obj	f2b4ef1647ae1d9b
+441	620	6986529506582492	LabProj6.exe	c8753138de5974c
+7	624	6987761765041564	CMakeFiles/LabProj6.dir/main.cpp.obj	f2b4ef1647ae1d9b
+23	626	6987761765071371	CMakeFiles/LabProj6.dir/mystring2.cpp.obj	da127e6d1094d816
+626	922	6987761767940722	LabProj6.exe	c8753138de5974c
+7	571	6991348455986641	CMakeFiles/LabProj6.dir/main.cpp.obj	f2b4ef1647ae1d9b
+32	579	6991348456075330	CMakeFiles/LabProj6.dir/mystring2.cpp.obj	da127e6d1094d816
+579	975	6991348459873043	LabProj6.exe	c8753138de5974c
+13	449	6991372013147773	CMakeFiles/LabProj6.dir/mystring2.cpp.obj	da127e6d1094d816
+12	297	6992575835864013	CMakeFiles/LabProj6.dir/mystring2.cpp.obj	da127e6d1094d816
+13	399	6992582186784221	CMakeFiles/LabProj6.dir/mystring2.cpp.obj	da127e6d1094d816
+10	224	6992583950238092	CMakeFiles/LabProj6.dir/mystring2.cpp.obj	da127e6d1094d816
+16	453	6995938863244875	CMakeFiles/LabProj6.dir/mystring2.cpp.obj	da127e6d1094d816

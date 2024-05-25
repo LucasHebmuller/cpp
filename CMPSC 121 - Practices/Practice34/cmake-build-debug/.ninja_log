@@ -1,0 +1,6 @@
+# ninja log v5
+3	406	6894088782452965	build.ninja	fa6ec8321b935b82
+1	410	6894088787638788	CMakeFiles/Practice34.dir/34.cpp.obj	ef97cbbe2c16cd0
+412	551	6894088789009655	Practice34.exe	be63fbb0aca41956
+3	268	6894089009692258	CMakeFiles/Practice34.dir/34.cpp.obj	ef97cbbe2c16cd0
+268	360	6894089010583966	Practice34.exe	be63fbb0aca41956

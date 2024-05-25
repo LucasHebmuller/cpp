@@ -1,0 +1,10 @@
+# ninja log v5
+4	763	7019031287438137	CMakeFiles/Lab_Proj_10.dir/main.cpp.obj	aa85284252c3f6c7
+2	361	7020781075415621	CMakeFiles/Lab_Proj_10.dir/BigInt.cpp.obj	19fc3a3b8cf91bd8
+362	490	7020781076682704	Lab_Proj_10.exe	710c7c3d1fd067cd
+3	438	7020782324293810	CMakeFiles/Lab_Proj_10.dir/main.cpp.obj	aa85284252c3f6c7
+17	441	7020782324313580	CMakeFiles/Lab_Proj_10.dir/BigInt.cpp.obj	19fc3a3b8cf91bd8
+442	620	7020782326057420	Lab_Proj_10.exe	710c7c3d1fd067cd
+3	1033	7020788661785993	CMakeFiles/Lab_Proj_10.dir/main.cpp.obj	aa85284252c3f6c7
+21	1042	7020788661917952	CMakeFiles/Lab_Proj_10.dir/BigInt.cpp.obj	19fc3a3b8cf91bd8
+1043	1313	7020788664535218	Lab_Proj_10.exe	710c7c3d1fd067cd

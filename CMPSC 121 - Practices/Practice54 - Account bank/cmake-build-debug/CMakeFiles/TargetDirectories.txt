@@ -1,0 +1,3 @@
+C:/Users/lucas/CLionProjects/Practice54/cmake-build-debug/CMakeFiles/Practice54.dir
+C:/Users/lucas/CLionProjects/Practice54/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/lucas/CLionProjects/Practice54/cmake-build-debug/CMakeFiles/rebuild_cache.dir

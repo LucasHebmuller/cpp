@@ -1,0 +1,6 @@
+# ninja log v5
+2	373	6970052759063444	CMakeFiles/Lab_Proj_4.dir/main.cpp.obj	55fc2c066409936a
+1	321	6970108034547437	build.ninja	92d4a327eb4587ec
+303	459	6970105475244593	Lab_Proj_4.exe	8079671242a3c577
+2	303	6970105473731390	CMakeFiles/Lab_Proj_4.dir/Frac.cpp.obj	9b926e96067aed2b
+13	254	6970055702712694	CMakeFiles/Lab_Proj_4.dir/LabProj4.cpp.obj	a35e44c7bf94a0e4

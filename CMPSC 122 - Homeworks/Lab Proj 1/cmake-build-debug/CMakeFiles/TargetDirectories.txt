@@ -1,0 +1,3 @@
+C:/Users/lucas/CLionProjects/CMPSC 122 - Homeworks/Lab Proj 1/cmake-build-debug/CMakeFiles/Lab_Proj_1.dir
+C:/Users/lucas/CLionProjects/CMPSC 122 - Homeworks/Lab Proj 1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/lucas/CLionProjects/CMPSC 122 - Homeworks/Lab Proj 1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

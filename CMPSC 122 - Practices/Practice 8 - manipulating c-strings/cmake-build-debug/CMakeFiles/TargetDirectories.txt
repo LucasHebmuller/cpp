@@ -1,0 +1,3 @@
+C:/Users/lucas/CLionProjects/CMPSC 122 - Practices/Practice 8 - manipulating c-strings/cmake-build-debug/CMakeFiles/Practice_8___manipulating_c_strings.dir
+C:/Users/lucas/CLionProjects/CMPSC 122 - Practices/Practice 8 - manipulating c-strings/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/lucas/CLionProjects/CMPSC 122 - Practices/Practice 8 - manipulating c-strings/cmake-build-debug/CMakeFiles/rebuild_cache.dir
