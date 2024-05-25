@@ -1,0 +1,4 @@
+﻿  ManipulatingCStrings.cpp
+C:\Users\lucas\OneDrive\Documentos\Estudos\c++\ManipulatingCStrings\ManipulatingCStrings.cpp(62,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\lucas\OneDrive\Documentos\Estudos\c++\ManipulatingCStrings\ManipulatingCStrings.cpp(63,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  ManipulatingCStrings.vcxproj -> C:\Users\lucas\OneDrive\Documentos\Estudos\c++\ManipulatingCStrings\x64\Debug\ManipulatingCStrings.exe

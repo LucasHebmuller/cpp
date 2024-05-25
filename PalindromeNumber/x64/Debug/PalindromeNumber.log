@@ -1,0 +1,3 @@
+﻿  PalindromeNumber.cpp
+C:\Users\lucas\OneDrive\Documentos\Estudos\c++\PalindromeNumber\PalindromeNumber.cpp(27,10): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  PalindromeNumber.vcxproj -> C:\Users\lucas\OneDrive\Documentos\Estudos\c++\PalindromeNumber\x64\Debug\PalindromeNumber.exe
