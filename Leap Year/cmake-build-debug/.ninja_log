@@ -1,0 +1,6 @@
+# ninja log v5
+5	328	6934495808533700	build.ninja	afaf9729d4381724
+1	417	6934495814050798	CMakeFiles/Exercism.dir/leap_year.cpp.obj	dc6ab1c28a5f5ad1
+418	558	6934495815433692	Exercism.exe	203c78b13d057314
+3	324	6934496493595533	CMakeFiles/Exercism.dir/leap_year.cpp.obj	dc6ab1c28a5f5ad1
+325	443	6934496494752516	Exercism.exe	203c78b13d057314

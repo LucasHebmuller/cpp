@@ -1,0 +1,12 @@
+# ninja log v5
+5	402	6935203834416583	build.ninja	afaf9729d4381724
+0	416	6935203839496446	CMakeFiles/Exercism.dir/main.cpp.obj	a93dd2e55ded93d8
+417	555	6935203840844014	Exercism.exe	5159dd06ac910fbc
+2	231	6935204092990099	CMakeFiles/Exercism.dir/main.cpp.obj	a93dd2e55ded93d8
+232	336	6935204093996875	Exercism.exe	5159dd06ac910fbc
+2	250	6935208535567902	CMakeFiles/Exercism.dir/main.cpp.obj	a93dd2e55ded93d8
+250	389	6935208536929137	Exercism.exe	5159dd06ac910fbc
+2	247	6935211035016281	CMakeFiles/Exercism.dir/main.cpp.obj	a93dd2e55ded93d8
+247	361	6935211036118420	Exercism.exe	5159dd06ac910fbc
+2	232	6935211488158270	CMakeFiles/Exercism.dir/main.cpp.obj	a93dd2e55ded93d8
+233	329	6935211489078546	Exercism.exe	5159dd06ac910fbc
