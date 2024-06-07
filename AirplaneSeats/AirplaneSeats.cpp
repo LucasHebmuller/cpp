@@ -11,6 +11,7 @@ using namespace std;
 ------------------------------------------------------------------------*/
 
 
+void menu(char [], int);
 void initializeSeats(char [], int);
 void displayAvailable(char [], int);
 void reserveSeat(char [], int);
@@ -23,19 +24,51 @@ int main()
     char seat[MAX_SEATS];
 
     initializeSeats(seat, MAX_SEATS);
-    
-    displayAvailable(seat, MAX_SEATS);
-
-    char answer;
-    cout << "Would you like to reserve a seat? (y/n)" << endl;
-    cin >> answer;
-
-    if(answer == 'y')
-        reserveSeat(seat, MAX_SEATS);
-
-    cout << "Have a great flight!" << endl;
+    menu(seat, MAX_SEATS);
 
     return 0;
+}
+
+
+/*-----------------------------------------------------------------------
+    Function to display a menu for the user to choose
+------------------------------------------------------------------------*/
+void menu(char seat[], int MAX_SEATS)
+{
+    cout << "--MENU-------------------------" << endl << endl;
+    cout << "   Select one of the options: " << endl;
+    cout << "   [1] Display available seats" << endl;
+    cout << "   [2] Reserve a seat" << endl;
+    cout << "   [3] Cancel a seat" << endl;
+    cout << "   [4] Exit" << endl << endl;
+
+    int pick;
+    do {
+        cout << "Enter your choice(1-4): ";
+        cin >> pick;
+
+        switch (pick)
+        {
+            case 1:
+                displayAvailable(seat, MAX_SEATS);
+                break;
+            case 2:
+                reserveSeat(seat, MAX_SEATS);
+                break;
+            case 3:
+                cout << "Not done yet." << endl;
+                break;
+            case 4:
+                cout << "Have a great flight!" << endl;
+                break;
+            default:
+                cout << "Invalid input. Please enter a number between 1 and 4." << endl;
+                break;
+        }
+
+        cout << "--------------------------------" << endl << endl;
+
+    } while(pick > 4 || pick < 1); 
 }
 
 
