@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 
@@ -15,7 +16,10 @@ void menu(char [], int);
 void initializeSeats(char [], int);
 void displayAvailable(char [], int);
 void reserveSeat(char [], int);
-//void cancelSeat(char [], int);
+void cancelSeat(char [], int);
+
+
+const int WIDTH = 3; // global variable
 
 
 int main()
@@ -35,17 +39,18 @@ int main()
 ------------------------------------------------------------------------*/
 void menu(char seat[], int MAX_SEATS)
 {
-    cout << "--MENU-------------------------" << endl << endl;
-    cout << "   Select one of the options: " << endl;
-    cout << "   [1] Display available seats" << endl;
-    cout << "   [2] Reserve a seat" << endl;
-    cout << "   [3] Cancel a seat" << endl;
-    cout << "   [4] Exit" << endl << endl;
+    cout << "--MENU------------------------------" << endl << endl;
+    cout << left << setw(WIDTH)  << "" << "Select one of the options: " << endl;
+    cout << left << setw(WIDTH) << "" << "[1] Display available seats" << endl;
+    cout << left << setw(WIDTH) << "" << "[2] Reserve a seat" << endl;
+    cout << left << setw(WIDTH) << "" << "[3] Cancel a seat" << endl;
+    cout << left << setw(WIDTH) << "" << "[4] Exit" << endl << endl;
 
     int pick;
     do {
         cout << "Enter your choice(1-4): ";
         cin >> pick;
+        cout << "------------------------------------" << endl << endl;
 
         switch (pick)
         {
@@ -56,7 +61,7 @@ void menu(char seat[], int MAX_SEATS)
                 reserveSeat(seat, MAX_SEATS);
                 break;
             case 3:
-                cout << "Not done yet." << endl;
+                cancelSeat(seat, MAX_SEATS);
                 break;
             case 4:
                 cout << "Have a great flight!" << endl;
@@ -65,8 +70,6 @@ void menu(char seat[], int MAX_SEATS)
                 cout << "Invalid input. Please enter a number between 1 and 4." << endl;
                 break;
         }
-
-        cout << "--------------------------------" << endl << endl;
 
     } while(pick > 4 || pick < 1); 
 }
@@ -93,6 +96,9 @@ void displayAvailable(char seat[], int MAX_SEATS)
         if(seat[i] == ' ')
             cout << i + 1 << " ";
     }
+    cout << endl << endl;
+
+    menu(seat, MAX_SEATS);
 }
 
 
@@ -101,15 +107,54 @@ void displayAvailable(char seat[], int MAX_SEATS)
 ------------------------------------------------------------------------*/
 void reserveSeat(char seat[], int MAX_SEATS)
 {
-    int choice = 0;
-    cout << "What is the seat you would like to reserve? (1 - " << MAX_SEATS <<")" << endl;
-    cin >> choice;
+    int choice;
+    do {
+        cout << "What is the seat you would like to reserve?" << endl;
+        cout << "Enter your choice(1-" << MAX_SEATS << "): ";
+        cin >> choice;
+
+        if(choice > MAX_SEATS || choice < 1)
+            cout << "Invalid input. Please enter a number between 1 and " << MAX_SEATS << "." << endl;
+    } while(choice > MAX_SEATS || choice < 1);
 
     if(seat[choice - 1] == 'X')
-        cout << "It was not possible to reserve this seat." << endl;
+        cout << "It was not possible to reserve the seat " << choice << " because it is already taken." << endl;
     else
     {
         seat[choice - 1] = 'X';
         cout << "Your seat was reserved!" << endl;
     }
+
+    cout << endl;
+
+    menu(seat, MAX_SEATS);
+}
+
+
+/*-----------------------------------------------------------------------
+    Function to cancel a seat in the airplane
+------------------------------------------------------------------------*/
+void cancelSeat(char seat[], int MAX_SEATS)
+{
+    int choice;
+    do {
+        cout << "What is the seat you would like to cancel?" << endl;
+        cout << "Enter your choice(1-" << MAX_SEATS << "): ";
+        cin >> choice;
+
+        if(choice > MAX_SEATS || choice < 1)
+            cout << "Invalid input. Please enter a number between 1 and " << MAX_SEATS << "." << endl;
+    } while(choice > MAX_SEATS || choice < 1);
+
+    if(seat[choice - 1] == ' ')
+        cout << "There is no reservation for this seat." << endl;
+    else
+    {
+        seat[choice - 1] = ' ';
+        cout << "This seat was canceled!" << endl;
+    }
+
+    cout << endl;
+
+    menu(seat, MAX_SEATS);
 }
