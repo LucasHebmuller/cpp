@@ -1,0 +1,18 @@
+# ninja log v5
+62	994	7399919970694464	CMakeFiles/cpp.dir/Clock/Clock.cpp.obj	67685bf35d0d9961
+106	998	7399919970759296	CMakeFiles/cpp.dir/CMPSC_122_-_Homeworks/In-Lab_6/List.cpp.obj	40e48b175f1ed566
+82	997	7399919970709079	CMakeFiles/cpp.dir/CMPSC_122_-_Homeworks/In-Lab_6/main.cpp.obj	2ffe154c90cb0b88
+42	1002	7399919970759296	CMakeFiles/cpp.dir/Clock/Time.cpp.obj	67f2a1d380ef276b
+61	1075	7399920276441756	CMakeFiles/cpp.dir/CMPSC_122_-_Homeworks/In-Lab_4b/Rect.cpp.obj	438484a0a133fb74
+53	1071	7399920276411648	CMakeFiles/cpp.dir/CMPSC_122_-_Homeworks/Lab_Proj_2/LabProj2.cpp.obj	1a3ff2a5dcffd54
+106	1074	7399920276421758	CMakeFiles/cpp.dir/CMPSC_122_-_Homeworks/In-Lab_3/InLab3.cpp.obj	2554c28ebc738a35
+114	1207	7399920277802567	CMakeFiles/cpp.dir/CMPSC_122_-_Homeworks/In-Lab_10/InLab10.cpp.obj	ee34d6500e48b819
+44	739	7399920654547657	CMakeFiles/cpp.dir/CMPSC_122_-_Homeworks/In-Lab_11/InLab11.cpp.obj	159e3ac0e00faa38
+40	768	7399920654846024	CMakeFiles/cpp.dir/CMPSC_122_-_Homeworks/In-Lab_4a/Point.cpp.obj	a847e43a97e1fab1
+65	773	7399920654916155	CMakeFiles/cpp.dir/CMPSC_122_-_Homeworks/In-Lab_4b/main.cpp.obj	3984abdc18b07b2b
+54	891	7399920656103560	CMakeFiles/cpp.dir/CMPSC_122_-_Homeworks/In-Lab_12/InLab12.cpp.obj	cd7c9ec153699f96
+33	746	7399920821090294	CMakeFiles/cpp.dir/CMPSC_121_-_Homeworks/Homework11/main.cpp.obj	3a32a810d4289209
+73	836	7399920821997781	CMakeFiles/cpp.dir/CMPSC_122_-_Homeworks/In-Lab_7a/List.cpp.obj	a3ceca4150457d63
+67	860	7399920822275796	CMakeFiles/cpp.dir/CMPSC_122_-_Homeworks/In-Lab_7b/Lab7ex2.cpp.obj	d72265e750e785ce
+65	726	7399921027171388	CMakeFiles/cpp.dir/CMPSC_122_-_Homeworks/In-Lab_7a/main.cpp.obj	f7cb22537c813c87
+59	762	7399921027561099	CMakeFiles/cpp.dir/CMPSC_122_-_Homeworks/In-Lab_9/llist-tem.cpp.obj	c9b0ea2f9dce2e6b

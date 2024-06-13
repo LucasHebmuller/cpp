@@ -1,0 +1,5 @@
+# ninja log v6
+1	298	7400021650189985	CMakeFiles/Complex.dir/main.cpp.obj	d9b999fa248e74ba
+12	301	7400021954496732	CMakeFiles/Complex.dir/Complex.cpp.obj	e291a48c590ab042
+5	314	7400021954426747	CMakeFiles/Complex.dir/main.cpp.obj	d9b999fa248e74ba
+314	656	7400021957522976	Complex.exe	811421e176e2cc1a
