@@ -10,5 +10,9 @@ int main()
     cout << b << endl;
     cout << c << endl;
 
+    a.set(10, 7);
+    cout << a.getImaginary() << endl;
+    cout << a.getReal() << endl;
+
     return 0;
 }
