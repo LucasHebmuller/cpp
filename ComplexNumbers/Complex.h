@@ -5,10 +5,10 @@ operations with complex numbers.
 @author Lucas Hebmuller
 ------------------------------------------------------------*/
 
-#include <iostream>
-
 #ifndef COMPLEX
 #define COMPLEX
+
+#include <iostream>
 
 class Complex
 {
@@ -30,8 +30,9 @@ class Complex
     private:
         unsigned myImaginary;
         unsigned myReal;
-}
+};
 
-unsigned operator+(const Complex & n1, const Complex & n2);
+ostream & operator<<(ostream & out, const Complex & c);
+unsigned operator+(const Complex & c1, const Complex & c2);
 
 #endif

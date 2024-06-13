@@ -28,5 +28,27 @@ unsigned Complex::getReal() const
     return myReal;
 }
 
+void Complex::set(unsigned imaginary, unsigned real)
+{
+    myImaginary = imaginary;
+    myReal = real;
+}
 
+void Complex::display(ostream & out) const
+{
+    out << myImaginary << "i" << " " << "+" << " " << myReal;
+}
+
+ostream & operator<<(ostream & out, const Complex & c)
+{
+    t.display(out);
+    return out;
+}
+
+unsigned operator+(const Complex & c1, const Complex & c2)
+{
+    Complex c;
+    c.set( (c1.getImaginary() + c2.getImaginary()), ((c1.getReal) + c2.getReal()) );
+    return c;
+}
 
