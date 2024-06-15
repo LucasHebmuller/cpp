@@ -1,0 +1,5 @@
+# ninja log v6
+8	427	7401935917838092	build.ninja	cb1265d9bbc53619
+1	490	7401935918401543	CMakeFiles/Text_Editor.dir/driver.cpp.obj	3d08af7082ccd01c
+6	351	7401936101812941	CMakeFiles/Text_Editor.dir/TextEditor.cpp.obj	89bd4374bc14c2e9
+352	867	7401936105263249	Text_Editor.exe	868a2aefc0afb0dc
