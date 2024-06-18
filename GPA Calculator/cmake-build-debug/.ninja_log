@@ -1,0 +1,7 @@
+# ninja log v6
+10	84	7404335897164156	CMakeFiles/GPA_Calculator.dir/GPA.cpp.obj	cb0eabab9e087ee1
+5	425	7404335897108481	CMakeFiles/GPA_Calculator.dir/main.cpp.obj	aadd470e0bb62d9
+426	548	7404335901322885	GPA_Calculator.exe	8dcb288f64f77cb7
+13	526	7404367333453039	CMakeFiles/GPA_Calculator.dir/main.cpp.obj	aadd470e0bb62d9
+20	552	7404367333524516	CMakeFiles/GPA_Calculator.dir/GPA.cpp.obj	cb0eabab9e087ee1
+552	715	7404367338842684	GPA_Calculator.exe	8dcb288f64f77cb7
