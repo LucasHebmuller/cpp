@@ -7,7 +7,7 @@ int main()
 {
     GPA student1;
 
-    student1.enterGrade();
+    student1.menu();
 
     return 0;
 }

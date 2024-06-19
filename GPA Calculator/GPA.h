@@ -17,12 +17,20 @@ class GPA
 {
     public:
         GPA(); // Constructor
-        double getCredits();
+
+        double getGPA() const;
+        double getTermGPA() const;
+        double getTerm() const;
+        double getCredits() const;
+
         void menu(); // Menu to select an option
-        void enterGrade(); // Enter the name, grade and credits for a course.
+        void enterGrade(); // Enter the name, grade and credits for a course
         void addTerm(); // Go to next semester
+
         void displayTermGPA(); // Display the GPA of a particular term
         void displayCumulativeGPA(); // Display overall GPA
+
+        void quit(); // Quit program
 
     private:
         vector<string> myCourses; // Stores the courses' names
