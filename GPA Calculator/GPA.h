@@ -21,7 +21,6 @@ class GPA
         double getGPA() const;
         double getTermGPA() const;
         double getTerm() const;
-        double getCredits() const;
 
         void menu(); // Menu to select an option
         void enterGrade(); // Enter the name, grade and credits for a course
@@ -35,9 +34,10 @@ class GPA
     private:
         vector<string> myCourses; // Stores the courses' names
         vector<double> myTermGPA; // Stores the GPA value of a particular term
+        vector<double> myTermCredits; // Stores the amount of credits for each term
+        vector<double> myTermPoints; // Stores the points received from each grade
         double myGPA; // Stores the GPA value
         int myTerm; // Keeps track of which term the student is at
-        double myCredits; // Stores the amount of credits the student has taken
 };
 
 #endif //GPA_H

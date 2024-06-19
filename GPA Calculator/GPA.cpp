@@ -23,31 +23,20 @@ GPA::GPA()
 {
     myGPA = 0;
     myTerm = 0;
-    myCredits = 0;
 }
 
-//--- Definition of getGPA()
+//--- Definition of getters
 double GPA::getGPA() const
 {
     return myGPA;
 }
-
-//--- Definition of getTermGPA()
 double GPA::getTermGPA() const
 {
     return myTermGPA[myTerm];
 }
-
 double GPA::getTerm() const
 {
     return myTerm;
-}
-
-
-//--- Definition of getCredits()
-double GPA::getCredits() const
-{
-    return myCredits;
 }
 
 //--- Definition of menu()
@@ -66,6 +55,7 @@ void GPA::menu()
     do {
         cout << "Enter your option: ";
         cin >> option;
+        cin.ignore(); // Deals with the getline problem
 
         if(option < 1 || option > 5)
             cout << "Invalid option. Enter a number between 1 and 5." << endl;
@@ -114,9 +104,21 @@ void GPA::enterGrade()
     getline(cin, grade);
     cout << "Credits: ";
     cin >> credits;
+    cin.ignore(); // Deals with the getline problem
 
-    myCourses.push_back(course);
-    myCredits += myCredits + credits;
+    myCourses.push_back(course); // Update later for a multidimensional vector
+    myTermCredits[myTerm] += credits;
+    switch (grade) {
+        case "A":
+            myTermPoints[myTerm] += 4;
+            break;
+        case "A-":
+            myTermPoints[myTerm] += 3.7;
+            break;
+        case "B+":
+            
+
+    }
 
     menu();
 }
