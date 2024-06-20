@@ -105,20 +105,37 @@ void GPA::enterGrade()
     cout << "Credits: ";
     cin >> credits;
     cin.ignore(); // Deals with the getline problem
+    cin.get(); // A pause...
 
     myCourses.push_back(course); // Update later for a multidimensional vector
     myTermCredits[myTerm] += credits;
-    switch (grade) {
-        case "A":
-            myTermPoints[myTerm] += 4;
-            break;
-        case "A-":
-            myTermPoints[myTerm] += 3.7;
-            break;
-        case "B+":
-            
 
-    }
+    if(grade == "A")
+        myTermPoints[myTerm] += 4;
+    else if(grade == "A-")
+        myTermPoints[myTerm] += 3.7;
+    else if(grade == "B+")
+        myTermPoints[myTerm] += 3.3;
+    else if(grade == "B")
+        myTermPoints[myTerm] += 3;
+    else if(grade == "B-")
+        myTermPoints[myTerm] += 2.7;
+    else if(grade == "C+")
+        myTermPoints[myTerm] += 2.3;
+    else if(grade == "C")
+        myTermPoints[myTerm] += 2;
+    else if(grade == "C-")
+        myTermPoints[myTerm] += 1.7;
+    else if(grade == "D+")
+        myTermPoints[myTerm] += 1.3;
+    else if(grade == "D")
+        myTermPoints[myTerm] += 1;
+    else if(grade == "D-")
+        myTermPoints[myTerm] += 0.7;
+    else if(grade == "F")
+        myTermPoints[myTerm] += 0;
+    else
+        cout << "*** Illegal input ***" << endl;
 
     menu();
 }
