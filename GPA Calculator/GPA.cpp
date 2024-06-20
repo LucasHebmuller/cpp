@@ -6,11 +6,10 @@
 #include <iomanip>
 #include <vector>
 #include <string>
+#include <limits>
 using namespace std;
 
 #include "GPA.h"
-
-const int SPACE = 2;
 
 //--- Utility function to display a line
 void line()
@@ -23,20 +22,9 @@ GPA::GPA()
 {
     myGPA = 0;
     myTerm = 0;
-}
-
-//--- Definition of getters
-double GPA::getGPA() const
-{
-    return myGPA;
-}
-double GPA::getTermGPA() const
-{
-    return myTermGPA[myTerm];
-}
-double GPA::getTerm() const
-{
-    return myTerm;
+    myTermCredits.push_back(0);
+    myTermPoints.push_back(0);
+    myTermGPA.push_back(0);
 }
 
 //--- Definition of menu()
@@ -55,7 +43,7 @@ void GPA::menu()
     do {
         cout << "Enter your option: ";
         cin >> option;
-        cin.ignore(); // Deals with the getline problem
+        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Deals with the getline problem
 
         if(option < 1 || option > 5)
             cout << "Invalid option. Enter a number between 1 and 5." << endl;
@@ -104,12 +92,11 @@ void GPA::enterGrade()
     getline(cin, grade);
     cout << "Credits: ";
     cin >> credits;
-    cin.ignore(); // Deals with the getline problem
-    cin.get(); // A pause...
+    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Deals with the getline problem
+
 
     myCourses.push_back(course); // Update later for a multidimensional vector
     myTermCredits[myTerm] += credits;
-
     if(grade == "A")
         myTermPoints[myTerm] += 4;
     else if(grade == "A-")
@@ -143,7 +130,13 @@ void GPA::enterGrade()
 //--- Definition of addTerm()
 void GPA::addTerm()
 {
+    // Updating data members
     myTerm++;
+    myTermCredits.push_back(0);
+    myTermPoints.push_back(0);
+    myTermGPA.push_back(0);
+
+
     cout << "New term added." << endl;
     menu();
 }

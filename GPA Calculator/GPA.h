@@ -13,14 +13,12 @@
 #include <string>
 using namespace std;
 
+const int SPACE = 2;
+
 class GPA
 {
     public:
         GPA(); // Constructor
-
-        double getGPA() const;
-        double getTermGPA() const;
-        double getTerm() const;
 
         void menu(); // Menu to select an option
         void enterGrade(); // Enter the name, grade and credits for a course
