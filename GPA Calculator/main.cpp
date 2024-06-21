@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
+    cout << setprecision(SPACE) << fixed;
+
     GPA student1;
 
     student1.menu();

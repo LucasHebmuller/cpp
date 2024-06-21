@@ -11,6 +11,7 @@
 
 #include <vector>
 #include <string>
+#include <iomanip>
 using namespace std;
 
 const int SPACE = 2;
@@ -23,6 +24,9 @@ class GPA
         void menu(); // Menu to select an option
         void enterGrade(); // Enter the name, grade and credits for a course
         void addTerm(); // Go to next semester
+
+        void calculateTermGPA();
+        void calculateCumulativeGPA();
 
         void displayTermGPA(); // Display the GPA of a particular term
         void displayCumulativeGPA(); // Display overall GPA

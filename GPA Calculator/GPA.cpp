@@ -98,29 +98,29 @@ void GPA::enterGrade()
     myCourses.push_back(course); // Update later for a multidimensional vector
     myTermCredits[myTerm] += credits;
     if(grade == "A")
-        myTermPoints[myTerm] += 4;
+        myTermPoints[myTerm] += (4 * credits);
     else if(grade == "A-")
-        myTermPoints[myTerm] += 3.7;
+        myTermPoints[myTerm] += (3.7 * credits);
     else if(grade == "B+")
-        myTermPoints[myTerm] += 3.3;
+        myTermPoints[myTerm] += (3.3 * credits);
     else if(grade == "B")
-        myTermPoints[myTerm] += 3;
+        myTermPoints[myTerm] += (3 * credits);
     else if(grade == "B-")
-        myTermPoints[myTerm] += 2.7;
+        myTermPoints[myTerm] += (2.7 * credits);
     else if(grade == "C+")
-        myTermPoints[myTerm] += 2.3;
+        myTermPoints[myTerm] += (2.3 * credits);
     else if(grade == "C")
-        myTermPoints[myTerm] += 2;
+        myTermPoints[myTerm] += (2 * credits);
     else if(grade == "C-")
-        myTermPoints[myTerm] += 1.7;
+        myTermPoints[myTerm] += (1.7 * credits);
     else if(grade == "D+")
-        myTermPoints[myTerm] += 1.3;
+        myTermPoints[myTerm] += (1.3 * credits);
     else if(grade == "D")
-        myTermPoints[myTerm] += 1;
+        myTermPoints[myTerm] += (1 * credits);
     else if(grade == "D-")
-        myTermPoints[myTerm] += 0.7;
+        myTermPoints[myTerm] += (0.7 * credits);
     else if(grade == "F")
-        myTermPoints[myTerm] += 0;
+        myTermPoints[myTerm] += (0 * credits);
     else
         cout << "*** Illegal input ***" << endl;
 
@@ -141,6 +141,12 @@ void GPA::addTerm()
     menu();
 }
 
+//--- Definition of calculateTermGPA()
+void GPA::calculateTermGPA()
+{
+    myTermGPA[myTerm] = myTermPoints[myTerm] / myTermCredits[myTerm];
+}
+
 //--- Definition of displayTermGPA()
 void GPA::displayTermGPA()
 {
@@ -151,7 +157,7 @@ void GPA::displayTermGPA()
 //--- Definition of displayCumulativeGPA()
 void GPA::displayCumulativeGPA()
 {
-    cout << " Your GPA for the " << myTerm << " term is " << myTermGPA[myTerm] << endl;
+    cout << " Your GPA for the " << myTerm + 1 << " term is " << myTermGPA[myTerm] << endl;
     menu();
 }
 
