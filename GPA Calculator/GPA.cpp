@@ -20,11 +20,10 @@ void line()
 //--- Definition of constructor
 GPA::GPA()
 {
-    myGPA = 0;
     myTerm = 0;
     myTermCredits.push_back(0);
     myTermPoints.push_back(0);
-    myTermGPA.push_back(0);
+
 }
 
 //--- Definition of menu()
@@ -59,10 +58,10 @@ void GPA::menu()
             addTerm();
             break;
         case 3:
-            displayTermGPA();
+            displayCumulativeGPA();
             break;
         case 4:
-            displayCumulativeGPA();
+            displayTermGPA();
             break;
         case 5:
             quit();
@@ -134,30 +133,44 @@ void GPA::addTerm()
     myTerm++;
     myTermCredits.push_back(0);
     myTermPoints.push_back(0);
-    myTermGPA.push_back(0);
-
 
     cout << "New term added." << endl;
     menu();
 }
 
 //--- Definition of calculateTermGPA()
-void GPA::calculateTermGPA()
+double GPA::calculateTermGPA()
 {
-    myTermGPA[myTerm] = myTermPoints[myTerm] / myTermCredits[myTerm];
+    return myTermPoints[myTerm] / myTermCredits[myTerm];
 }
+
+//--- Definition of calculateCumulativeGPA()
+double GPA::calculateCumulativeGPA()
+{
+    double allPoints = 0,
+           allCredits = 0;
+
+    for(int i = 0; i <= myTerm; i++)
+        allPoints += myTermPoints[i];
+
+    for(int i = 0; i <= myTerm; i++)
+        allCredits += myTermCredits[i];
+
+    return allPoints / allCredits;
+}
+
 
 //--- Definition of displayTermGPA()
 void GPA::displayTermGPA()
 {
-    cout << "Your cumulative GPA is: " << myGPA << endl;
+    cout << "Your GPA for the " << myTerm + 1 << " term is " << calculateTermGPA() << endl;
     menu();
 }
 
 //--- Definition of displayCumulativeGPA()
 void GPA::displayCumulativeGPA()
 {
-    cout << " Your GPA for the " << myTerm + 1 << " term is " << myTermGPA[myTerm] << endl;
+    cout << "Your cumulative GPA is " << calculateCumulativeGPA() << endl;
     menu();
 }
 
