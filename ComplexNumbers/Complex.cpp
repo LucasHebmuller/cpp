@@ -12,43 +12,46 @@ Complex::Complex()
     myReal = 0;
 }
 
-Complex::Complex(unsigned imaginary, unsigned real)
+Complex::Complex(int imaginary, int real)
 {
     myImaginary = imaginary;
     myReal = real;
 }
 
-unsigned Complex::getImaginary() const
+int Complex::getImaginary() const
 {
     return myImaginary;
 }
 
-unsigned Complex::getReal() const
+int Complex::getReal() const
 {
     return myReal;
 }
 
-void Complex::set(unsigned imaginary, unsigned real)
+void Complex::set(int imaginary, int real)
 {
     myImaginary = imaginary;
     myReal = real;
 }
 
-void Complex::display(ostream & out) const
+void Complex::display(std::ostream & out) const
 {
     out << myImaginary << "i" << " " << "+" << " " << myReal;
 }
 
-ostream & operator<<(ostream & out, const Complex & c)
+std::ostream & operator<<(std::ostream & out, const Complex & c)
 {
-    t.display(out);
+    c.display(out);
     return out;
 }
 
-unsigned operator+(const Complex & c1, const Complex & c2)
+/*
+int operator+(const Complex & c1, const Complex & c2)
 {
     Complex c;
-    c.set( (c1.getImaginary() + c2.getImaginary()), ((c1.getReal) + c2.getReal()) );
+    c.set( c1.getImaginary() + c2.getImaginary(), c1.getReal() + c2.getReal() );
     return c;
 }
+*/
+
 

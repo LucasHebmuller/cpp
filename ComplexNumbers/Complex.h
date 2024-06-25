@@ -12,27 +12,27 @@ operations with complex numbers.
 
 class Complex
 {
-    public:
-        //---Class constructors---
-        Complex();
-        Complex(unsigned imaginary, unsigned real);
+public:
+    //---Class constructors---
+    Complex();
+    Complex(int imaginary, int real);
 
-        //---Acessors---
-        unsigned getImaginary() const;
-        unsigned getReal() const;
+    //---Acessors---
+    int getImaginary() const;
+    int getReal() const;
 
-        //---Output---
-        void display(ostream & out) const;
+    //---Output---
+    void display(std::ostream & out) const;
 
-        //---Set operation---
-        void set(unsigned imaginary, unsigned real);
+    //---Set operation---
+    void set(int imaginary, int real);
 
-    private:
-        unsigned myImaginary;
-        unsigned myReal;
+private:
+    int myImaginary;
+    int myReal;
 };
 
-ostream & operator<<(ostream & out, const Complex & c);
-unsigned operator+(const Complex & c1, const Complex & c2);
+std::ostream & operator<<(std::ostream & out, const Complex & c);
+//int operator+(const Complex & c1, const Complex & c2);
 
 #endif
