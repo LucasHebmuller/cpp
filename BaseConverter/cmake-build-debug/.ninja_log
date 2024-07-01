@@ -1,0 +1,6 @@
+# ninja log v6
+4	343	7415454895808167	CMakeFiles/BaseConverter.dir/main.cpp.obj	a780b94fb904087f
+345	473	7415454899207616	BaseConverter.exe	f9caeca6f017b5e0
+16	514	7415471226428751	CMakeFiles/BaseConverter.dir/Stack.cpp.obj	86d0fb0f9dfcdaa1
+10	518	7415471226373566	CMakeFiles/BaseConverter.dir/main.cpp.obj	a780b94fb904087f
+518	670	7415471231447900	BaseConverter.exe	2c5c9c465c45fc8b
