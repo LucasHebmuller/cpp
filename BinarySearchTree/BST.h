@@ -96,7 +96,7 @@ void BST<DataType>::insert(const DataType & item)
         parent = locptr;
         if (item < locptr->data)
             locptr = locptr->left;
-        else if (locptr->data > item)
+        else if (item > locptr->data)
             locptr = locptr->right;
         else
             found = true;
