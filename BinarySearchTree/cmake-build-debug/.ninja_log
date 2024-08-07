@@ -1,10 +1,4 @@
 # ninja log v6
-14	545	7430473034718647	build.ninja	3e00316dfa9da3df
-1	1579	7430473035369997	CMakeFiles/BinarySearchTree.dir/main.cpp.obj	b78aa41753a4c56c
-1582	1912	7430473051168396	BinarySearchTree.exe	baa0f608f5bfeed6
-8	419	7430475581498233	CMakeFiles/BinarySearchTree.dir/main.cpp.obj	b78aa41753a4c56c
-419	559	7430475585608923	BinarySearchTree.exe	baa0f608f5bfeed6
-5	375	7430479601430109	CMakeFiles/BinarySearchTree.dir/main.cpp.obj	b78aa41753a4c56c
-376	482	7430479605135762	BinarySearchTree.exe	baa0f608f5bfeed6
+14	545	7446010659514944	build.ninja	3e00316dfa9da3df
 8	635	7430505758981202	CMakeFiles/BinarySearchTree.dir/main.cpp.obj	b78aa41753a4c56c
 635	787	7430505765251703	BinarySearchTree.exe	baa0f608f5bfeed6

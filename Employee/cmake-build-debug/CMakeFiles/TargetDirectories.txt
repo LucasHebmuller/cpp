@@ -1,0 +1,3 @@
+C:/Users/lucas/OneDrive/Documentos/Estudos/cpp/Employee/cmake-build-debug/CMakeFiles/Employee.dir
+C:/Users/lucas/OneDrive/Documentos/Estudos/cpp/Employee/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/lucas/OneDrive/Documentos/Estudos/cpp/Employee/cmake-build-debug/CMakeFiles/rebuild_cache.dir
