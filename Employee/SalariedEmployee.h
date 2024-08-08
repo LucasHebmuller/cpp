@@ -20,11 +20,14 @@ private:
 };
 
 inline SalariedEmployee::SalariedEmployee(long id, string last, string first,
-    char initial, int dept, double salary)
-{
-    Employee(id, last, first, initial, dept);
-    mySalary = salary;
-}
+    char initial, int dept, double sal) : Employee(id, last, first, initial, dept),
+    mySalary(sal)
+{ }
 
+inline void SalariedEmployee::display(ostream & out) const
+{
+    Employee::display(out);
+    out << "$" << mySalary << endl;
+}
 
 #endif //SALARIEDEMPLOYEE_H
